@@ -1,0 +1,10 @@
+def fac2():
+    '''Retorna o fatorial de um número '''
+    n = int(input('Informe o número\t'))
+    f=1
+    c=n
+    for i in range(n):
+        f*=c
+        c-=1
+    print(f'O fatorial de {n}! = {f}')
+fac2()
