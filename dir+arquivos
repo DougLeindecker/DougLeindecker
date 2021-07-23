@@ -1,0 +1,8 @@
+import os
+
+
+if not os.path.exists('Teste2'):
+    os.mkdir('Teste2')
+
+with open('Teste2/Escrita.txt','w') as a:
+    a.write('Agora vai!!')
