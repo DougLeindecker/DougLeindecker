@@ -1,0 +1,11 @@
+file = open('arquivo.txt', 'w+')
+while True:
+    entrada = input()
+    if entrada !='0':
+        file.write(entrada)
+    else:
+        file.seek(0)
+        for letras in file.read():
+            print(letras)
+        file.close()
+        break
