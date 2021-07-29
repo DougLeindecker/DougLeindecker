@@ -1,0 +1,19 @@
+arquivo = open('arq.txt','w+')
+letra = input()
+arquivo.write(letra)
+vogal = 0
+cosoante =0
+for i in letra:
+  for l in i:
+    if  l in 'aeoiu':
+      vogal +=1  
+for x in letra:
+  for a in x:
+    if  a in 'bcdfghjklmnpqrstvxywz':
+      cosoante +=1  
+           
+   
+print(f'Total de vogais:\t{vogal}')
+print('\n')
+print(f'Total de cosoantes:\t{cosoante}')
+arquivo.close()
