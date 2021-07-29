@@ -1,0 +1,15 @@
+arq = open('arq.txt','w+')
+texto = input('Infrome um texto:\t')
+c = 0
+crc = input('Informe um caracter:\t')
+arq.write(texto)
+arq.seek(0)
+for i in texto:
+  for l in i:
+    if i in crc:
+      c +=1
+
+print(c)
+
+
+arq.close()
