@@ -1,0 +1,11 @@
+arquivo = open('arq.txt','w+')
+letra = input()
+arquivo.write(letra)
+vogal = 0
+for i in letra:
+  for l in i:
+    if  l in 'aeoiu':
+      vogal +=1
+      print(l , end=' ')
+print(f'Total de vogais:\t{vogal}')
+arquivo.close()
