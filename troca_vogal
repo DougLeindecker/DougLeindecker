@@ -1,0 +1,18 @@
+arquivo = open("arq.txt","w+")
+nt = "*"
+texto = str(input())
+arquivo.write(texto)
+for i in texto:
+  for x in i:
+    if i in "aeiou":
+      texto = texto.replace('a','*')
+      texto = texto.replace('e','*')
+      texto = texto.replace('i','*')
+      texto = texto.replace('o','*')
+      texto = texto.replace('u','*')
+
+print(texto)
+arquivo.close()
+file = open('2arq.txt','w+')
+file.write(texto)
+file.close()
