@@ -1,0 +1,64 @@
+class Elevador:
+
+    contador = 0
+    def __init__(self, terreo, andar, espaco):
+        self.__andar = andar
+        self.__terreo = terreo
+        self.__espaco = espaco
+
+    @property
+    def andar (self):
+        return self.__andar
+    @andar.setter
+    def andar (self, Novo_andar):
+        self.__andar = Novo_andar
+    @property
+    def terreo(self):
+        return self.__terreo
+
+    @property
+    def espaco(self):
+        return self.__espaco
+
+    @espaco.setter
+    def espaco(self, Novo_espaco):
+         self.__espaco = Novo_espaco
+
+
+
+    def Entra(self):
+        if self.__espaco >= 11:
+            print('Lotado')
+        else:
+            print('Entrnado...')
+            Elevador.contador += 1
+            print('  ')
+            print(f'O elevador tem {Elevador.contador} pessoa(s) dentro')
+
+    def Sai(self):
+        if Elevador.contador > 0:
+            Elevador.contador -= 1
+            print('  ')
+            print('Saindo')
+        else:
+            print('Elevador vazio')
+
+    def Sobe(self):
+        if self.andar == 15:
+            print('No ultimo andar')
+            print('  ')
+        else:
+            print('  ')
+            print('Subindo')
+
+    def Desce(self):
+        if self.terreo == 0:
+            print('Você está no terreo')
+        else:
+            print('Descendo')
+
+x = Elevador(15,15,10)
+x.Entra()
+
+z = Elevador(15,15,10)
+z.Entra()
