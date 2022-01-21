@@ -1,6 +1,6 @@
 # Olá!
 
-- 👀 I’m interested in Python and IA
+- 👀 I’m interested in Python fot data analysis
 - 📜  I’m currently learning Python and SQl
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me: leindeckerdouglas@gmail.com
